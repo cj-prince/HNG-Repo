@@ -5,8 +5,9 @@ export const getController = async (req, res) => {
   const {slack_name, track} = req.query;
   const date_day = 'Monday';
   const utcTime = new Date(Date.now()).toISOString().split('.')[0] + 'Z';
-  const github_file_url = 'https://github.com/cj-prince/hng_backend_app';
-  const github_repo_url = 'https://github.com/cj-prince/hng_backend_ap';
+  const github_file_url = 'https://github.com/cj-prince/HNG-Repo';
+  const github_repo_url =
+    'https://github.com/cj-prince/HNG-Repo.git';
 
   const result = {
     slack_name: slack_name,
